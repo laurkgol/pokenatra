@@ -1,6 +1,7 @@
-require 'active_record'
-require 'ffaker'
 require 'pg'
+require 'active_record'
+require 'sinatra'
+require 'sinatra-contrib'
 require_relative 'connection'
 require_relative '../models/pokemon'
 
