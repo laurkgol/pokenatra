@@ -1,7 +1,6 @@
 require 'pg'
 require 'active_record'
-require 'sinatra'
-require 'sinatra-contrib'
+
 require_relative 'connection'
 require_relative '../models/pokemon'
 
@@ -14,3 +13,16 @@ Pokemon.create(name: "Clefairy", cp: rand(800), poke_type: "fairy", img_url: "ht
 Pokemon.create(name: "Nidoking", cp: rand(800), poke_type: "poison ground", img_url: "https://img.pokemondb.net/artwork/nidoking.jpg")
 Pokemon.create(name: "Gengar", cp: rand(800), poke_type: "ghost poison", img_url: "https://img.pokemondb.net/artwork/gengar.jpg")
 Pokemon.create(name: "Blastoise", cp: rand(800), poke_type: "water", img_url: "https://img.pokemondb.net/artwork/blastoise.jpg")
+
+# pokemon_data = get_pokemon_data()
+#
+# pokemons.each do |pokemon|
+#     Pokemon.create!({
+#       name:        pokemon[:name,
+#       poke_type:   pokemon[:poke_type],
+#       cp:          pokemon[:cp],
+#       img_url:     pokemon[:img_url],
+#       pokemon:     current_pokemon
+#     })
+#   end
+# end
